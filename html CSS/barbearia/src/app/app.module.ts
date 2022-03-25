@@ -6,7 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ContatosComponent } from './contatos/contatos.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +20,12 @@ import { ContatosComponent } from './contatos/contatos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

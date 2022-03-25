@@ -1,5 +1,11 @@
 <main>
+
   <form>
+    <mat-form-field appearance="fill">
+      <mat-label for= "nomeesobrenome">Nome e Sobrenome</mat-label>
+      <input matInput type="text" id="nomeesobrenome" required>
+    </mat-form-field>
+
     <label for= "nomeesobrenome">Nome e Sobrenome</label>
     <input type="text" id="nomeesobrenome" class="input-padrao" required>
 
@@ -10,7 +16,7 @@
     <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)12345-1234">
 
     <label for="mensagem">Mensagem</label>
-    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea >
+    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
       <fieldset>
         <legend>Como prefere nosso contato?</legend>
@@ -34,8 +40,8 @@
 
      <label class="checkbox"> <input type= "checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
 
-    <input type="submit" value="Enviar Formulário" class="enviar">
-
+    <!-- <input type="submit" value="Enviar Formulário" class="enviar"> -->
+    <button mat-flat-button color="primary">Enviar Formulário</button>
   </form>
 
   <table>
@@ -47,7 +53,7 @@
              </tr>
    </thead>
       <tbody>
-      <tr>
+        <tr>
             <td>Segunda</td>
             <td>8h ~ 20H</td>
         </tr>
@@ -58,7 +64,7 @@
         <tr>
             <td>Sexta</td>
             <td>8h ~ 20H</td>
-      </tr>
+        </tr>
      </tbody>
 </table>
 </main>
