@@ -1,8 +1,9 @@
+import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import {ReactiveFormsModule} from '@angular/forms';
 const routes: Routes = [
   {
     path:'',
@@ -10,6 +11,10 @@ const routes: Routes = [
     children: [
       {path:'',
       component:LoginComponent,
+     },
+     {
+       path:'novousuario',
+       component:NovoUsuarioComponent,
      }
     ]
   }
